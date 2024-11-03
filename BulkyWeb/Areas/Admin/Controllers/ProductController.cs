@@ -95,7 +95,7 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
                 return View(productVM);
             }
         }
-       
+
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll()
