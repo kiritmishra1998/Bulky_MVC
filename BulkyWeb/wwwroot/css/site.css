@@ -27,3 +27,11 @@ body {
     white-space: nowrap;
     line-height: 60px;
 }
+html, body {
+    overflow: hidden;
+}
+.catalogue-container {
+    max-height: 400px; /* Set to your preferred height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: auto;
+}
