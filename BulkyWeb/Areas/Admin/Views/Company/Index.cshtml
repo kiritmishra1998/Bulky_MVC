@@ -1,0 +1,39 @@
+﻿@model List<Company>
+<div class="card shadow border-0 my-4">
+    <div class="card-header bg-secondary bg-gradient m-lg-0 py-2">
+        <div class="row">
+            <div class="col-12 text-center" style="background-color: black; color: white;">
+                <h2 class="text-white bg-transparent py-2">COMPANY CATALOGUE</h2>
+            </div>
+        </div>
+        <div class="card-body p-4">
+            <div class="row pb-3 ">
+                <div class="col-6">
+                </div>
+                <div class="col-6 text-end">
+                    <a asp-controller="Company" asp-action="Upsert" class="btn btn-primary">
+                        <i class="bi bi-plus-circle-fill"></i> CREATE A NEW COMPANY
+                    </a>
+
+                </div>
+            </div>
+            <table id="tblData" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>STREET ADDRESS</th>
+                        <th>CITY</th>
+                        <th>STATE</th>
+                        <th>POSTAL CODE</th>
+                        <th>PHONE NUMBER</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/Company.js"></script>
+}

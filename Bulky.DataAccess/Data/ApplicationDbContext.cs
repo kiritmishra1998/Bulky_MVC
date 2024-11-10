@@ -12,6 +12,7 @@ namespace BulkyBook.DataAccess.Data
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Company> Companies { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; } 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -107,6 +108,11 @@ namespace BulkyBook.DataAccess.Data
                     Category_Id = 11,
                     ImageUrl = ""
                 }
+                );
+            modelBuilder.Entity<Company>().HasData(
+                new Company { Id = 1, Name = "Amazon", StreetAddress = "Amazon.com Services LLC, 410 Terry Ave. North, Seattle, WA 98109-5210",City= "Seattle",State= "Washington",PostalCode= "98109-5210",PhoneNumber="123456789" },
+                new Company { Id = 2, Name = "Microsoft", StreetAddress = "Microsoft Corporation, 1 Microsoft Way, Redmond, WA 98052, US",City= "Redmond",State = "California",PostalCode = "98052",PhoneNumber="234567890" },
+                new Company { Id = 3, Name = "Google", StreetAddress = "1600 Amphitheatre Parkway Mountain View, CA 94043",City= "Mountain View",State = "California",PostalCode = "94043",PhoneNumber="345678901" }
                 );
         }
     }
