@@ -27,3 +27,17 @@ body {
     white-space: nowrap;
     line-height: 60px;
 }
+#Count {
+    padding: 0; /* Remove any extra padding */
+    margin: 0; /* Remove margin if any */
+    line-height: 1.2; /* Align content vertically */
+    height: 35px; /* Adjust to your layout's height */
+    font-size: 16px; /* Ensure the text is readable */
+    box-shadow: none; /* Remove extra shadow effects */
+    border: 1px solid #ccc; /* Match the border style */
+}
+input[type="number"] {
+    -moz-appearance: textfield; /* Remove spinners for Firefox */
+    -webkit-appearance: none; /* Remove spinners for Chrome, Safari */
+    appearance: none; /* Normalize across browsers */
+}
